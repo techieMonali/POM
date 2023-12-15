@@ -4,6 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
 import org.junit.Assert;  
 
 import com.irctc.base.testBase;
@@ -17,15 +23,29 @@ public class homePage extends testBase{
 	
 	//POM
 	By irctcLogo = By.xpath("//span[@class='h_logo_right_div']");
+	By closeDishapopUP = By.cssSelector("#disha-banner-close");
+	By cubeBox = By.xpath("//img[contains(@src,'cubebox/cross.png')]");
 
+	static WebDriverWait wait;
+	
 	public homePage(){
 		PageFactory.initElements(driver, this); //initialization required for page factory elements
 	}
 	
-	public void verifyHeadingAndLogo() {
+	public boolean verifyHeadingAndLogo() {
 		WebElement logo = driver.findElement(irctcLogo);
 		
-		Assert.assertTrue(logo.isDisplayed());
-		System.out.println("Loggo is displayed");
+		return logo.isDisplayed();
+		//System.out.println("Logo is displayed");
+	}
+	
+	public void closeAllPopUp() {
+		wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(closeDishapopUP)));
+		driver.findElement(closeDishapopUP).click();
+		System.out.println("Minimized disha po-up");
+		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(cubeBox)));
+		driver.findElement(cubeBox).click();
+		System.out.println("Closed cube box");
 	}
 }

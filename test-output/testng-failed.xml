@@ -5,6 +5,7 @@
     <classes>
       <class name="com.irctc.tests.homePageTest">
         <methods>
+          <include name="endTest"/>
           <include name="setup"/>
           <include name="launchWebsiteAndVerify"/>
         </methods>

@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-14T20:34:15 IST" name="Default suite" finished-at="2023-12-14T20:34:29 IST" duration-ms="13914">
+  <suite started-at="2023-12-15T15:39:20 IST" name="IRCTC" finished-at="2023-12-15T15:39:36 IST" duration-ms="15827">
     <groups>
     </groups>
-    <test started-at="2023-12-14T20:34:15 IST" name="Default test" finished-at="2023-12-14T20:34:29 IST" duration-ms="13914">
+    <test started-at="2023-12-15T15:39:20 IST" name="Validate Home Page" finished-at="2023-12-15T15:39:36 IST" duration-ms="15827">
       <class name="com.irctc.tests.homePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.irctc.tests.homePageTest@2f4948e4]" started-at="2023-12-14T20:34:15 IST" name="setup" finished-at="2023-12-14T20:34:22 IST" duration-ms="7442" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.irctc.tests.homePageTest@1ca3b418]" started-at="2023-12-15T15:39:20 IST" name="setup" finished-at="2023-12-15T15:39:26 IST" duration-ms="5673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="launchWebsiteAndVerify()[pri:0, instance:com.irctc.tests.homePageTest@2f4948e4]" started-at="2023-12-14T20:34:22 IST" name="launchWebsiteAndVerify" description="Launching website and verfying Heading &amp; Logo" finished-at="2023-12-14T20:34:26 IST" duration-ms="4260" status="PASS">
+        <test-method signature="launchWebsiteAndVerify()[pri:0, instance:com.irctc.tests.homePageTest@1ca3b418]" started-at="2023-12-15T15:39:26 IST" name="launchWebsiteAndVerify" description="Launching website and verfying Heading &amp; Logo" finished-at="2023-12-15T15:39:33 IST" duration-ms="7764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsiteAndVerify -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:com.irctc.tests.homePageTest@2f4948e4]" started-at="2023-12-14T20:34:26 IST" name="endTest" finished-at="2023-12-14T20:34:29 IST" duration-ms="2171" status="PASS">
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.irctc.tests.homePageTest@1ca3b418]" started-at="2023-12-15T15:39:33 IST" name="endTest" finished-at="2023-12-15T15:39:36 IST" duration-ms="2334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- com.irctc.tests.homePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Validate Home Page -->
+  </suite> <!-- IRCTC -->
 </testng-results>
