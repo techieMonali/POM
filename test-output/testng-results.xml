@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-15T15:39:20 IST" name="IRCTC" finished-at="2023-12-15T15:39:36 IST" duration-ms="15827">
+  <suite started-at="2023-12-16T20:19:09 IST" name="Default suite" finished-at="2023-12-16T20:19:32 IST" duration-ms="23570">
     <groups>
     </groups>
-    <test started-at="2023-12-15T15:39:20 IST" name="Validate Home Page" finished-at="2023-12-15T15:39:36 IST" duration-ms="15827">
+    <test started-at="2023-12-16T20:19:09 IST" name="Default test" finished-at="2023-12-16T20:19:32 IST" duration-ms="23570">
       <class name="com.irctc.tests.homePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.irctc.tests.homePageTest@1ca3b418]" started-at="2023-12-15T15:39:20 IST" name="setup" finished-at="2023-12-15T15:39:26 IST" duration-ms="5673" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.irctc.tests.homePageTest@16eb3ea3]" started-at="2023-12-16T20:19:09 IST" name="setup" finished-at="2023-12-16T20:19:14 IST" duration-ms="4197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="launchWebsiteAndVerify()[pri:0, instance:com.irctc.tests.homePageTest@1ca3b418]" started-at="2023-12-15T15:39:26 IST" name="launchWebsiteAndVerify" description="Launching website and verfying Heading &amp; Logo" finished-at="2023-12-15T15:39:33 IST" duration-ms="7764" status="PASS">
+        <test-method signature="addLocationsInFields(java.lang.String,java.lang.String)[pri:0, instance:com.irctc.tests.homePageTest@16eb3ea3]" started-at="2023-12-16T20:19:14 IST" name="addLocationsInFields" data-provider="getTestData" finished-at="2023-12-16T20:19:19 IST" duration-ms="5050" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pune]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chennai]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchWebsiteAndVerify -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:com.irctc.tests.homePageTest@1ca3b418]" started-at="2023-12-15T15:39:33 IST" name="endTest" finished-at="2023-12-15T15:39:36 IST" duration-ms="2334" status="PASS">
+        </test-method> <!-- addLocationsInFields -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.irctc.tests.homePageTest@16eb3ea3]" started-at="2023-12-16T20:19:19 IST" name="endTest" finished-at="2023-12-16T20:19:21 IST" duration-ms="2780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.irctc.tests.homePageTest@16eb3ea3]" started-at="2023-12-16T20:19:21 IST" name="setup" finished-at="2023-12-16T20:19:25 IST" duration-ms="3136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addLocationsInFields(java.lang.String,java.lang.String)[pri:0, instance:com.irctc.tests.homePageTest@16eb3ea3]" started-at="2023-12-16T20:19:25 IST" name="addLocationsInFields" data-provider="getTestData" finished-at="2023-12-16T20:19:30 IST" duration-ms="5726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mumbai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[goa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLocationsInFields -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.irctc.tests.homePageTest@16eb3ea3]" started-at="2023-12-16T20:19:30 IST" name="endTest" finished-at="2023-12-16T20:19:32 IST" duration-ms="1933" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- com.irctc.tests.homePageTest -->
-    </test> <!-- Validate Home Page -->
-  </suite> <!-- IRCTC -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

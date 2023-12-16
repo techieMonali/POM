@@ -25,8 +25,10 @@ public class homePage extends testBase{
 	By irctcLogo = By.xpath("//span[@class='h_logo_right_div']");
 	By closeDishapopUP = By.cssSelector("#disha-banner-close");
 	By cubeBox = By.xpath("//img[contains(@src,'cubebox/cross.png')]");
-
-	static WebDriverWait wait;
+	By fromBox = By.xpath("//input[contains(@class,'ng-tns-c57-8')]");
+	By toBox = By.xpath("//input[contains(@class,'ng-tns-c57-9')]");
+	
+	WebDriverWait wait;
 	
 	public homePage(){
 		PageFactory.initElements(driver, this); //initialization required for page factory elements
@@ -47,5 +49,13 @@ public class homePage extends testBase{
 		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(cubeBox)));
 		driver.findElement(cubeBox).click();
 		System.out.println("Closed cube box");
+	}
+	
+	public void addLocations(String from, String to) throws InterruptedException {
+		wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(fromBox)));
+		driver.findElement(fromBox).sendKeys(from);
+		driver.findElement(toBox).sendKeys(to);
+		Thread.sleep(3000);
 	}
 }
