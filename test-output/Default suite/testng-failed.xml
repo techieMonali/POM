@@ -7,7 +7,7 @@
         <methods>
           <include name="endTest"/>
           <include name="setup"/>
-          <include name="addLocationsInFields" invocation-numbers="0 1"/>
+          <include name="onPurposeFailCase"/>
         </methods>
       </class> <!-- com.irctc.tests.homePageTest -->
     </classes>

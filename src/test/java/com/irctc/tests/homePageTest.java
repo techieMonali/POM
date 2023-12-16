@@ -6,11 +6,13 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.irctc.pages.homePage;
 import com.irctc.util.testUtil;
 
+@Listeners(com.irctc.util.listener.class)  
 public class homePageTest extends homePage{
 	homePageTest obj;
 	
@@ -47,6 +49,11 @@ public class homePageTest extends homePage{
 		obj.addLocations(from, to);
 	}
 	
+	@Test
+	public void onPurposeFailCase() {
+		Assert.assertTrue(obj.verifyHeadingAndLogo());
+		Assert.assertTrue(false);
+	}
 	
 	@AfterMethod
 	public void endTest() {
