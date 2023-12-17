@@ -1,7 +1,7 @@
 This demo project has automation framework which contains
-Language - Java
-Test case execution - TestNG
-Element locators using Page factory and POM
-Listener - TestNG listener
-Utility - test data fetching form Excel file, Taking screenshots
-Class files - Page and Test files
+1. Language - Java
+2.Test case execution - TestNG
+3.Element locators using Page factory and POM
+4.Listener - TestNG listener
+5.Utility - test data fetching form Excel file, Taking screenshots, Extent Report
+6.Class files - Page and Test files
