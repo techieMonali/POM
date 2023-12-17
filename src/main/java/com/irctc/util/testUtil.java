@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -20,7 +21,7 @@ public class testUtil extends testBase{
 	public static String filePath = System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\testData.xlsx";
 	public static Workbook book;
 	public static Sheet sheet;
-	
+	public static String screenshotName;
 	
 	public void switchToFrame(String frmNM) {
 		driver.switchTo().frame(frmNM);
@@ -59,8 +60,10 @@ public class testUtil extends testBase{
 	
 	public static void takeScreenshot() throws IOException{
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		 Date d = new Date();
+         screenshotName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";  
 		File destFile = new File(System.getProperty("user.dir")+"\\testResults\\screenshots\\"
-		+System.currentTimeMillis()+".png");
+		+screenshotName);
 		FileUtils.copyFile(srcFile, destFile);
 	}
 }
