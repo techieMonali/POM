@@ -31,7 +31,7 @@ public class homePage extends testBase{
 	WebDriverWait wait;
 	
 	public homePage(){
-		PageFactory.initElements(driver, this); //initialization required for page factory elements
+		PageFactory.initElements(driver, this); //initialization of objects for all page factory elements, only once
 	}
 	
 	public boolean verifyHeadingAndLogo() {
